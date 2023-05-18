@@ -26,6 +26,14 @@ export const StyledUl = styled.div`
     font-size: var(--text1);
     color: var(--brand);
     margin-top: 20px;
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+      &:visited {
+        color: var(--brand);
+      }
+    }
   }
 
   li {
@@ -37,7 +45,7 @@ export const StyledUl = styled.div`
     text-align: center;
     cursor: pointer;
 
-    transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.4s;
     &:hover {
       background-color: var(--brand);
       color: var(--primary-color);

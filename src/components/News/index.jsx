@@ -4,6 +4,7 @@ import axios from "axios";
 import { DivLottie, DivNews, StyledUl } from "./style";
 import Lottie from "lottie-react";
 import LottieNews from "../../lotties/109397-news-error.json";
+import { Link } from "react-router-dom";
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -34,12 +35,24 @@ const News = () => {
           <p>Sobre o que você quer ler hoje?</p>
 
           <ul>
-            <li>Tecnologia</li>
-            <li>Esportes</li>
-            <li>Política</li>
-            <li>Entretenimento</li>
-            <li>Mundo</li>
-            <li>Ciência</li>
+            <Link to={"/technews"}>
+              <li>Tecnologia</li>
+            </Link>
+            <Link to={"/esportenews"}>
+              <li>Esportes</li>
+            </Link>
+            <Link to={"/politicanews"}>
+              <li>Política</li>
+            </Link>
+            <Link to={"/entretenimentonews"}>
+              <li>Entretenimento</li>
+            </Link>
+            <Link to={"/worldnews"}>
+              <li>Mundo</li>
+            </Link>
+            <Link to={"/cienciasnews"}>
+              <li>Ciência</li>
+            </Link>
           </ul>
         </DivNews>
       </StyledUl>
