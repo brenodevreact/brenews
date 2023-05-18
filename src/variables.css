@@ -1,11 +1,11 @@
 :root {
-  --brand: #ffffff;
-  --primary-color: #000000;
+  --brand: #000000;
+  --primary-color: #ffffff;
   --secondary-color: #999999;
 
   --text1: 16px;
   --text2: 14px;
-  --text3: 14px;
+  --text3: 12px;
 
   --title1: 32px;
   --title2: 24px;

@@ -1,9 +1,10 @@
 import React from "react";
+import TechNews from "../components/Technews";
 
 const Technews = () => {
   return (
     <div>
-      <h2>Technews</h2>
+      <TechNews />
     </div>
   );
 };

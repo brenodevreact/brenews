@@ -1,28 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Main } from "../../GlobalStyles";
-import axios from "axios";
 import { DivLottie, DivNews, StyledUl } from "./style";
 import Lottie from "lottie-react";
 import LottieNews from "../../lotties/109397-news-error.json";
 import { Link } from "react-router-dom";
 
 const News = () => {
-  const [news, setNews] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get(`https://inshorts.deta.dev/news?category=entertainment`)
-      .then((response) => {
-        // Manipule a resposta aqui
-        setNews(response.data.data);
-      })
-      .catch((error) => {
-        // Manipule o erro aqui
-        console.error(error);
-      });
-  }, []);
-  console.log(news);
-
   return (
     <Main>
       <StyledUl>
