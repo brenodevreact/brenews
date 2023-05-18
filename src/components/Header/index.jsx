@@ -6,16 +6,18 @@ import Lottie from "lottie-react";
 const Header = () => {
   return (
     <MainHeader>
-      <div>
-        <Lottie animationData={Logo} />
-      </div>
+      <nav>
+        <div>
+          <Lottie animationData={Logo} />
+        </div>
 
-      <ul>
-        <li>fodase</li>
-        <li>fodase</li>
-        <li>fodase</li>
-        <li>fodase</li>
-      </ul>
+        <ul>
+          <li>fodase</li>
+          <li>fodase</li>
+          <li>fodase</li>
+          <li>fodase</li>
+        </ul>
+      </nav>
     </MainHeader>
   );
 };
