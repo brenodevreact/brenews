@@ -60,6 +60,7 @@ const ResetCSS = createGlobalStyle`
   body {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+    background-color: var(--primary-color);
   }
 `;
 

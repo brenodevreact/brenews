@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Main } from "../../GlobalStyles";
 import axios from "axios";
-import { StyledUl } from "./style";
+import { DivLottie, DivNews, StyledUl } from "./style";
+import Lottie from "lottie-react";
+import LottieNews from "../../lotties/109397-news-error.json";
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -22,7 +24,25 @@ const News = () => {
 
   return (
     <Main>
-      <StyledUl></StyledUl>
+      <StyledUl>
+        <DivLottie>
+          <Lottie animationData={LottieNews} />
+        </DivLottie>
+
+        <DivNews>
+          <h2>Olá, leitor(a)!</h2>
+          <p>Sobre o que você quer ler hoje?</p>
+
+          <ul>
+            <li>Tecnologia</li>
+            <li>Esportes</li>
+            <li>Política</li>
+            <li>Entretenimento</li>
+            <li>Mundo</li>
+            <li>Ciência</li>
+          </ul>
+        </DivNews>
+      </StyledUl>
     </Main>
   );
 };
