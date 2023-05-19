@@ -7,10 +7,15 @@ export const MainHeader = styled.header`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   position: fixed;
   top: 0;
   z-index: 100;
+  overflow: auto;
+
+  @media (min-width: 560px) {
+    justify-content: center;
+  }
 
   padding: 12px;
 

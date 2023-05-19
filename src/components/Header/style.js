@@ -13,5 +13,6 @@ export const MainHeader = styled.header`
   h2 {
     font-size: var(--title3);
     color: var(--primary-color);
+    text-align: center;
   }
 `;
