@@ -7,14 +7,15 @@ import { motion } from "framer-motion";
 import Aos from "aos";
 import HeaderSports from "../HeaderSports";
 import BannerSports from "../BannerSports";
+import BannerEntretenimento from "../BannerEntretenimento";
 
-const SportNews = () => {
+const Entretenimentosnews = () => {
   const [news, setNews] = useState([]);
   const [removeLoading, setRemoveLoading] = useState(false);
 
   useEffect(() => {
     axios
-      .get(`https://inshorts.deta.dev/news?category=sports`)
+      .get(`https://inshorts.deta.dev/news?category=entertainment`)
       .then((response) => {
         setNews(response.data.data);
         setRemoveLoading(true);
@@ -28,7 +29,7 @@ const SportNews = () => {
     <>
       <HeaderSports />
       <Main>
-        <BannerSports />
+        <BannerEntretenimento />
         <StyledTechs>
           <motion.div
             initial={{ opacity: 0 }}
@@ -59,4 +60,4 @@ const SportNews = () => {
   );
 };
 
-export default SportNews;
+export default Entretenimentosnews;
