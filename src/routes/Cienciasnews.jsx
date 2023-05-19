@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import Cienciasnews from "../components/Ciencianews";
+import { motion } from "framer-motion";
 
-const Cienciasnews = () => {
+const Ciencianews = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <Cienciasnews />
+    </motion.div>
+  );
+};
 
-export default Cienciasnews
+export default Ciencianews;
