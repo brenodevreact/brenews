@@ -23,13 +23,12 @@ const TechNews = () => {
     <>
       <HeaderTech />
       <Main>
+        <Banner />
         <StyledTechs>
-          <Banner />
-
           <ul>
             {news.map((elem) => (
               <a href={elem.url} target="blank">
-                <li>
+                <li key={elem.id}>
                   <img src={elem.imageUrl} alt={elem.title} />
                   <span>{elem.date}</span>
                   <h2>{elem.title}</h2>

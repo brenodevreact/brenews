@@ -9,6 +9,8 @@ export const MainHeader = styled.header`
   align-items: center;
   justify-content: center;
   position: fixed;
+  top: 0;
+  z-index: 100;
 
   padding: 12px;
 

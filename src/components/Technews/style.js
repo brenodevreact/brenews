@@ -9,7 +9,7 @@ export const StyledTechs = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
 
@@ -18,7 +18,7 @@ export const StyledTechs = styled.div`
       flex-direction: column;
 
       gap: 8px;
-      width: 325px;
+      width: 360px;
       height: 320px;
       color: var(--brand);
       font-size: var(--text1);
@@ -44,6 +44,7 @@ export const StyledTechs = styled.div`
 
       p {
         font-size: 12px;
+        text-align: justify;
       }
 
       img {
