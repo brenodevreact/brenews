@@ -8,6 +8,7 @@ import Aos from "aos";
 import HeaderSports from "../HeaderSports";
 import BannerSports from "../BannerSports";
 import BannerEntretenimento from "../BannerEntretenimento";
+import Headerentretenimento from "../HeaderEntretenimento";
 
 const Entretenimentosnews = () => {
   const [news, setNews] = useState([]);
@@ -27,7 +28,7 @@ const Entretenimentosnews = () => {
 
   return (
     <>
-      <HeaderSports />
+      <Headerentretenimento />
       <Main>
         <BannerEntretenimento />
         <StyledTechs>
