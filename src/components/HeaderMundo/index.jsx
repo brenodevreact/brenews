@@ -18,8 +18,8 @@ const Headermundo = () => {
         <Link to={"/esportenews"}>
           <li>Esportes</li>
         </Link>
-        <Link to={"/technews"}>
-          <li>Technologia</li>
+        <Link to={"/entretenimentonews"}>
+          <li>Entretenimento</li>
         </Link>
         <Link to={"/cienciasnews"}>
           <li>Ciência</li>
