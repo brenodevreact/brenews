@@ -1,11 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Carousel from "../Carrossel";
 import { StyledTechs } from "./style";
 import { Main } from "../../GlobalStyles";
-import { Link } from "react-router-dom";
-import Header from "../Header";
 import HeaderTech from "../HeaderTech";
+import Banner from "../BannerTech";
 
 const TechNews = () => {
   const [news, setNews] = useState([]);
@@ -15,20 +13,19 @@ const TechNews = () => {
       .get(`https://inshorts.deta.dev/news?category=technology`)
       .then((response) => {
         setNews(response.data.data);
-        console.log(response);
       })
       .catch((error) => {
         console.error(error);
       });
   }, []);
 
-  console.log(news);
-
   return (
     <>
       <HeaderTech />
       <Main>
         <StyledTechs>
+          <Banner />
+
           <ul>
             {news.map((elem) => (
               <a href={elem.url} target="blank">
