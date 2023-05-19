@@ -11,3 +11,8 @@
   --title2: 24px;
   --title3: 20px;
 }
+
+.dark-mode {
+  --brand: #ffffff;
+  --primary-color: #000000;
+}

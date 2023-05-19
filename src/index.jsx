@@ -10,7 +10,6 @@ import Politicanews from "./routes/Politicanews";
 import Entretenimentonews from "./routes/Entretenimentonews";
 import Worldnews from "./routes/Worldnews";
 import Cienciasnews from "./routes/Cienciasnews";
-import { ThemeProvider } from "./ThemeContext";
 
 const router = createBrowserRouter([
   {
@@ -52,10 +51,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <NewsProvider>
-        <RouterProvider router={router} />
-      </NewsProvider>
-    </ThemeProvider>
+    <NewsProvider>
+      <RouterProvider router={router} />
+    </NewsProvider>
   </React.StrictMode>
 );
